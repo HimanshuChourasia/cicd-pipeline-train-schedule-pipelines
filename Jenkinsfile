@@ -8,4 +8,8 @@ pipeline {
        }
      }
    }
+  post {
+    always {
+      archiveArtifacts artifacts: '/dist/*.zip'
+  }
  } 
